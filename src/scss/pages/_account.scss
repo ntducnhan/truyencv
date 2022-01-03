@@ -1,0 +1,22 @@
+.danhdau {
+    display: flex;
+    justify-content: space-around;
+}
+
+.danhdau-left {
+    ul { 
+
+        width: 40%;
+
+        li {
+            list-style-type: none;
+            .img-acc {
+                img {
+                   max-width: 100%;
+                
+                }
+               
+            } 
+        }
+    }
+}

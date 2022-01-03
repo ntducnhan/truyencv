@@ -1,0 +1,83 @@
+$colorText : #b78a28;
+$color333: #333;
+$color666: #666;
+
+.cardTruyen{
+    width: 49%;
+    display: flex;
+    padding-right: 1%;
+    margin-bottom: 3%;
+    .avatar{
+        width: 40%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .infor{
+        padding-left: 4%;
+        padding-right: 3%;
+        h3 {
+            float: left;
+            font-size: 15px;
+            margin: 0;
+           
+            font-weight: 600;
+            a{
+                text-decoration: none;
+                color: $color333;
+                &:hover {
+                    color:  #b78a28;
+                }
+            }
+        }
+        p {
+            margin: 10% 0 5% 0;
+            text-align: left;
+            font-size: 14px;
+            color: #666;
+            height: fit-content;
+            width: 100% ;// chiều rộng bằng khối bao nó
+            overflow: hidden; // ẩn các nội dung khi kích thước lớn hơn chiều rộng khối bên ngoài
+            text-overflow: ellipsis; //thêm 3 dấu chấm ở cuối
+            -webkit-line-clamp: 1;// số dòng muốn hiển thị
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+
+        }      
+        .infor-bottom {
+            display: flex;
+            justify-content: space-between;
+
+            .spanAuthor{
+                display: flex;
+                font-size: 15px;
+            
+            }
+            
+            .hashtag {
+               
+                border: 1px solid $colorText;
+                padding: 0 2%;
+                a{
+                    color: $colorText ;
+                    font-size: 13px;
+                    text-decoration: none;
+                }
+            }
+        } 
+    }
+
+
+}
+
+
+@media only screen and (max-width: 811px) {
+    .cardSearch {
+        width: 100%;
+    }
+    .cardTruyen {
+        width: 100% !important;
+    }
+}

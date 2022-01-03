@@ -1,0 +1,157 @@
+$bgColor: #F4F4F4;
+$inputColor: #b78a28;
+
+
+.header{
+    .nav-header{
+        background-color: $bgColor;
+        .log{
+            display: flex;
+            justify-content: flex-end;
+            padding: 1% 0;
+
+        }
+        span {
+            margin: 0 1% ;
+        }
+    }
+
+
+    .logo-content {
+        .container-logo{
+            padding: 1% 0;
+            width: 100%;
+        }
+        .MuiBox-root-14 {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .MuiContainer-root{
+            display: flex;
+
+            .headerclass {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo {
+                .imgLogo {
+                    width: 187px;
+                }
+            }
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+
+            .inputSearch {
+                width: 428px;
+                height: 34px;
+                border-radius: 20px;
+                &:focus{
+                    outline: none;
+                };
+                border: 1px solid $inputColor;
+            }
+            
+        }
+
+        .tutruyen{
+            ul {
+                border: 1px solid #666666;
+                border-radius: 15px;
+                padding: 0;
+                li {
+                    list-style-type: none;
+                  
+                    a{
+                        padding: 5% 10px;
+                        display: flex;
+                        text-decoration: none;
+                        color: #666666;
+                    }
+                }
+            }
+        }
+       
+    }
+    
+    .main-menu{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+       .menu-left{
+           display: flex;
+       }
+    }
+
+    .menu-header{
+        background-color: #666666;
+        .lstTheLoai {
+            padding: 0;
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                display: flex;
+                color: white;
+            }
+             }
+        }
+
+        .lstBXH li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        .btnUpload li {
+            list-style-type: none;
+            a{
+                display: flex;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+   
+    .linkSign {
+         text-decoration: none;
+
+    }
+
+    .linkSign:visited {
+        color: black
+    }
+   
+}
+
+@media only screen and (max-width: 767px) {
+       
+        .search {
+            display: block !important;
+            .inputSearch {
+                width: 100px !important;
+            }
+        }
+
+        .tutruyen {
+            display: none;
+        }
+
+        .logo {
+            width: 30%;
+            .imgLogo {
+                max-width: 100%
+            }
+        }
+
+
+       
+}

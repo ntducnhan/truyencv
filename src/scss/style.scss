@@ -1,0 +1,30 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+//Components
+
+@import './components/card';
+@import './components/cardReading';
+@import './components/tableIndex';
+@import './components/OnTop';
+@import './components/rank';
+@import './components/cardRate';
+@import './components/SlideShow';
+@import './components/details';
+@import './components/introducer';
+@import './components//signUp';
+@import './components/listChaps';
+
+
+//Pages
+@import './pages/index';
+@import './pages/signIn';
+@import './pages/detailchap';
+@import './pages/detailSearch';
+@import './pages/account';
+
+
+

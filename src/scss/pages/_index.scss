@@ -1,0 +1,318 @@
+.index{
+    width: 100%;
+    height: 100vh;
+    padding-top: 1.5%;
+    background: #fff url('../../image/home-bg.jpg') no-repeat top;
+    
+
+    .MuiBox-root{
+        width: 100%;
+        justify-content: start;
+    }
+
+    #appoint{
+       background-color: #fff;
+       border-radius: 10px;
+       .appoint1{
+           display: flex;
+       }
+       .appoint-left{
+           width: 70%;
+           padding-left: 2%;
+           padding-right: 1%;
+           height: -webkit-fill-available;
+           .left-title{
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+
+               span {
+                   display: none;
+                   color: #b78a28;
+               }
+           }
+
+           .left-title:hover span{
+              display: block;
+           }
+       }
+
+       .appoint-right{
+            width: 30%;
+            height: 100%;
+            text-align: left;
+
+            .lstReading{
+                ul {
+                    display: flex;
+                    padding: 0;
+                    li{
+                        width: 80%;
+                        display: flex;
+                        list-style-type: none;
+                    }
+
+                    span {
+                        cursor: pointer;
+                        &:hover {
+                            color: orange
+                        }
+                    }
+
+
+                }
+            }
+
+            .guide {
+                .lstGuild{
+                    ul{
+                        padding: 0 4%;
+                        li {
+                            padding: 1% 0;
+                            a{
+                                text-decoration: none;
+                                color: #333;
+                            }
+                        }
+                           
+                    }
+
+                    ul li a:hover {
+                        color: #b78a28
+                    }
+                     
+                }
+            }
+       }
+    }
+
+    #update {
+        .update-title{
+            display: flex;
+            align-items: center;
+            h3 {
+                padding-right: 1%;
+            }
+
+            span {
+                display: none;
+                color: #b78a28;
+            }
+        }
+    }
+
+    #update:hover {
+        span {
+            display: block;
+        }
+    }
+
+    .rank-mvp{
+        display: flex;
+        .ranked{
+            width: 33.33%;
+            height: fit-content;
+            padding: 2%;
+            margin: 5% 1%;
+            box-shadow: 0 10px 25px 0 #d7d4ce;
+            border-radius: 10px;
+            .listTruyen {
+                ul {
+                    padding: 0;
+                   
+                    li{
+                        
+                        list-style-type: none;
+                        text-align: left;
+                        margin-bottom: 5%;
+                
+                        .medal {
+                            width: 30px;
+                            height: 30px;
+                        }
+                       
+                    }                
+                }
+
+                .lst2 li {
+                    padding-left: 3%;
+                    span {
+                    padding-right: 2%;
+                   
+                }
+            }
+
+               
+            }
+
+            .rank-title {
+                display: flex;
+                justify-content:  space-between;
+                align-items: center;    
+                span {
+                    display:none;
+                    color: #b78a28;
+                }         
+            }
+
+            .TopFlower{
+                padding: 0;
+            }
+        }
+
+        .ranked:hover{
+            
+            span{
+                display: block;
+            }
+            
+            .Tname {
+                display: flex;
+                border-bottom: 1px solid #EEEEEE;
+                .nameT {
+                    @include three;
+                    width: 280px;
+                    padding-bottom: 10px;
+                }
+                .value{
+                    color: $color6666;
+                    text-align: right;
+                }
+            }
+
+            .infor-flower{
+                .flower{
+                    .nameT span{
+                        @include three;
+                        width: 200px !important;
+                    }
+                }
+            }
+            
+            
+         
+        } 
+    }
+    
+    #rate-comments {
+        display: flex;
+        .rate-left {
+            width: 67%;
+            .rank-title {
+                display: flex;
+                align-items: center;
+                justify-content:space-between;              
+
+                span {
+                    display: none;
+                    a {
+                        color: orange;
+                        text-decoration: none;
+                    }
+                    
+                }
+            }
+            .lst-rate {
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: left;
+
+                li{
+                    list-style-type: none;
+                    width: 50%;
+                }
+            }
+        }
+
+        .rate-left:hover {
+            .rank-title span {
+                display: block;
+            }
+        }
+           
+        }
+
+
+        .rate-right{
+            width: 33%;
+            .right{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+            }
+        }
+
+        .aReading {
+           @include three;
+           width: 250px ;
+        }
+
+        .pTenTruyen {
+            color: orange;
+            font-weight: 600;
+        }
+
+        .pAuthor, .pTag {
+            border: 1px solid #b78a28;
+            color: #b78a28;
+            padding: 1%;
+            font-size: 13px;
+            width: 200px;
+            margin: auto;
+            margin-bottom: 2%;
+
+        }
+}
+
+
+@media only screen and (max-width: 811px) {
+       
+    .appoint-left {
+        display: none;
+    }
+
+    .appoint-right {
+        width: 100% !important;
+        .title-right {
+            margin-left: 3%;
+        }
+    }
+
+    .lstRead {
+        margin-left: 3%;
+    }
+
+    .guide {
+        display: none;
+    }
+
+    .rank-mvp {
+       display: block !important;
+    }
+
+    .sectionNew {
+        display: none !important;
+    }
+
+    .rate-right {
+        display: none;
+    }
+
+    .lst-rate {
+        display: block !important;
+    }
+
+    .ranked {
+        width: 365px !important;
+
+    }
+
+    .MuiContainer-root {
+        padding-left: 0 !important;
+    }
+  
+}
+
+

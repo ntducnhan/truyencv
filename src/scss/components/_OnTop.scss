@@ -1,0 +1,86 @@
+@mixin three {
+    width:200px ;// chiều rộng bằng khối bao nó
+    overflow: hidden; // ẩn các nội dung khi kích thước lớn hơn chiều rộng khối bên ngoài
+    text-overflow: ellipsis; //thêm 3 dấu chấm ở cuối
+    -webkit-line-clamp: 1;// số dòng muốn hiển thị
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+@mixin three2 {
+    width:200px ;// chiều rộng bằng khối bao nó
+    overflow: hidden; // ẩn các nội dung khi kích thước lớn hơn chiều rộng khối bên ngoài
+    text-overflow: ellipsis; //thêm 3 dấu chấm ở cuối
+    -webkit-line-clamp: 2;// số dòng muốn hiển thị
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+
+@mixin dsFlex {
+    display: flex;
+    align-items: center;
+}
+
+$color6666: #666666;
+
+.infor-flower{
+    display: flex;
+    padding-left: 1%;
+    .flower {
+        p {
+            margin: 2px;
+            color: $color6666;
+
+           
+        }
+        span{
+            font-weight: 600;
+            @include three;
+        }
+
+        .candy{
+           @include dsFlex;
+           padding-bottom: 5%;
+           p {
+               color: #088860;
+               padding-right: 3%
+           }
+        }
+
+        .author{
+           @include dsFlex;
+            .textAuthor {
+                @include three;
+                margin-top: 0;
+                color: $color6666;
+            }
+            
+            span {
+                width: 12%;
+                color: $color6666;
+            }
+        }
+
+        .tag {
+            color: $color6666;
+            display: flex;
+            align-items: center;
+            p {
+                padding-left: 3%;
+            }
+        }
+
+        .nameT:hover {
+            color: #b78a28;
+        }
+        
+        
+}
+    img{
+
+        width: 70px;
+        height: 105px;
+        outline: 1px solid transparent
+    }
+}

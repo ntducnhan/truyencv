@@ -1,0 +1,175 @@
+@mixin oval {            
+    border-radius: 20px;
+    text-align: center;
+    padding: 3px 15px;
+    font-size: 15px;
+}
+
+
+.details {
+    padding: 2%;
+    .detail-header{
+        display: flex ;
+        .detail-header-left{
+            img {
+                width: 200px;
+                
+            }
+
+        }
+        .detail-header-right{
+            margin-left: 2%;
+            text-align:left;
+            h3 {
+                margin: 0 ;
+                
+            }
+
+            .totalChaps {
+               margin: 2% 0 5% 0;
+            }
+            
+            .d-flex{
+                 display: flex;
+                 align-items: center;
+                 width: 100%;
+                 margin-top: 2%;
+
+                 p {
+                     width: 33%;
+                     margin-left: 5%;
+                     @include oval;
+                     border: 1px solid #b78a28;
+                     color: #b78a28;
+                 }
+
+                 span {
+                    @include oval;
+                    border: 1px solid #666;
+                    color: #666;
+                 }
+            }
+
+            .lst-btn-detail{
+                display: flex; 
+                padding: 0;
+                cursor: pointer;
+                 li{
+                     list-style-type: none;
+                     margin-right: 2%;
+                     width: 150px;
+                     border-radius:  2rem;
+                     border: 0.5px solid #666666;
+                     overflow: hidden;
+                         a {
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                             padding: 7% 0;
+                             font-size: 15px;
+                             font-weight: 700;
+                         }
+
+                         .btn1 {
+                             background-color: #ff0d00;
+                             color: white;
+                             border-color: none !important;
+                            
+                         }
+
+                       
+                         .btn2 {
+                             color: #666666;
+                             text-align: center;
+                         }
+
+                         .btn3 {
+                             background-color: #f7f5f0;
+                             color: #b78a28;
+                             border-color:  #b78a28 !important;
+                         }
+                 }
+
+                 
+            }
+        }
+    }
+
+    .lst-menu{
+        .ul-menu{
+            display: flex;
+            padding: 0;
+            list-style-type: none;
+            width: 60%;
+            align-items: center;
+            padding: 0;
+           
+            li {
+                width: 20%;
+                text-align: left;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 18px;
+               
+            }
+        }
+    }
+
+
+    .para {
+        width: 50%;
+        text-align: left;
+    }
+
+    .lst-Intro{
+        padding: 0;
+        li {
+            list-style-type: none;
+            margin: 3% 0;
+        }
+    }
+
+   
+}
+
+
+@media only screen and (max-width: 811px) { 
+    .details .detail-header {
+        display: block ;
+    }
+
+    .detail-header-right {
+        text-align: center !important;
+    }
+
+    .d-flex {
+        display: none !important;
+    }
+
+    .lst-btn-detail {
+        display: block !important  ;
+         li {
+             margin-top: 3% !important;
+             margin-left: 27% !important;
+         }
+       
+    }
+
+    .ul-menu {
+        width: 100% !important;
+        li {
+            font-size: 12px !important;
+        }
+    }
+
+    .para {
+        width: 100% !important;
+    }
+
+    .lstChaps ul{
+        display: block !important;
+        .lstNameChap {
+            padding-bottom: 1%;
+        }
+    }
+}

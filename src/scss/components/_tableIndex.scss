@@ -1,0 +1,37 @@
+$color999: #999;
+
+.MuiTableCell-root{
+    color: $color999 !important;
+}
+.tbNameT{
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.tbChapT {
+    text-decoration: none;
+    color: black;
+}
+
+.rowUpdate a:hover {
+    color: #b78a28;
+}
+
+
+@media only screen and (max-width: 811px) {
+       .tbnone {
+           display: none !important;
+       }
+
+       #update {
+           width: 375px;
+       }
+
+       .makeStyles-table-5 {
+           max-width: 375px !important;
+           min-width: 374px !important;
+       }
+
+       
+}

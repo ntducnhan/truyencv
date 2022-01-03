@@ -1,0 +1,27 @@
+$colorb78a28: #b78a28;
+
+.Tname {
+    display: flex;
+    border-bottom: 1px solid #EEEEEE;
+    a{
+        text-decoration: none;
+        color: $color666
+    }
+    .nameT {
+        @include three;
+        width: 280px;
+        padding-bottom: 10px;
+       
+    }
+    .value{
+        color: $color6666;
+        text-align: right;
+    }
+}
+
+.Tname a:hover {
+    color: $colorb78a28;
+}
+
+
+
